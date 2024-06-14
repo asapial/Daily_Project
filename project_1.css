@@ -5,6 +5,7 @@
     padding: 0;
     background-color: #24252A;
     font-family: sans-serif;
+
 }
 
 h1,nav,button,a
@@ -91,8 +92,8 @@ button:hover
     width: 90%;
     height: 80%;
     /* opacity: 10%; */
-    box-shadow: 0px 0px 10px 10px rgb(146, 160, 223)  ,
-    0px 0px 10px 10px #1b45ff ;
+    box-shadow: 0vh 0vh 2vw 2vh rgb(146, 160, 223)  ,
+    0vh 0vh 2vw 2vh #1b45ff ;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -103,21 +104,17 @@ button:hover
 .clock{
     display: flex;
     width: 50%;
-    height: 100px;
+    height: 25vh;
     justify-content: space-around;
     align-items: center;
-    font-size: 2em;
-    font-weight: 10px;
+    font-size: 2.5vw;
+    font-weight: 15vw;
     color: rgb(253, 245, 212);
-    box-shadow: 0px 0px 10px 10px rgb(223, 146, 199)  ,
-    0px 0px 10px 10px #ff1be8 ;
+    box-shadow:0vh 0vh 1vw 1vh rgb(223, 146, 199)  ,
+    0vh 0vh 1vw 1vh #ff1be8 ;
     border-radius: 50%;
     /* background-color: #6e355f */
     
 }
 
-span{
-    width: auto;
-    
-}
 
