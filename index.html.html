@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="project_1.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header>
+        <h1>Abdullah</h1>
+        <nav>
+            <ul class="nav_class">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">Js</a></li>
+            </ul>
+
+        </nav>
+        <button>Contact</button>
+    </header>
+
+
+    <div class="project_1">
+        <div class="container">
+            <div class="clock">
+                <span id="hour">00</span>
+                <span>:</span>
+                <span id="miniute">00</span>
+                <span>:</span>
+                <span id="second">00</span>
+                <span>:</span>
+                <span id="am">00</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let h, m, s,ampm;
+        h = document.getElementById("hour");
+        m = document.getElementById("miniute");
+        s = document.getElementById("second");
+        ampm=document.getElementById("am");
+
+        setInterval(() => {
+            let time = new Date();
+            console.log(time);
+            let hh=time.getHours();
+            if(hh>12)
+            {
+                hh-=12;
+            }
+            h.innerHTML = (hh>=10?"":"0")+hh;
+            m.innerHTML = (time.getMinutes()>=10?"":"0")+time.getMinutes();
+            s.innerHTML = (time.getSeconds()>=10?"":"0")+time.getSeconds();
+            ampm.innerHTML = time.getHours() > 12? "PM" : "AM";
+        }, 1000)
+
+    </script>
+</body>
+
+</html>
