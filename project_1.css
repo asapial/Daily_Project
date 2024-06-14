@@ -76,9 +76,9 @@ button:hover
     background-color: #616370;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 100PX;
+    margin-top: 25vh;
     width: 50%;
-    height: 400px;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,4 +116,8 @@ button:hover
     
 }
 
+span{
+    width: auto;
+    
+}
 
