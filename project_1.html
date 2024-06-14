@@ -63,6 +63,8 @@
             {
                 hh-=12;
             }
+            if(hh==0)
+            {hh=12;}
             h.innerHTML = (hh>=10?"":"0")+hh;
             m.innerHTML = (time.getMinutes()>=10?"":"0")+time.getMinutes();
             s.innerHTML = (time.getSeconds()>=10?"":"0")+time.getSeconds();
